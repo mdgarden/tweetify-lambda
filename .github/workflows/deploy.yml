@@ -3,11 +3,11 @@ name: tweetify-lambda
 on: 
   push:
     branches:
-        main # You can use any of your root or master branch name
+        main
   
 jobs:
   lambda-deploy:
-  	runs-on: ubuntu-latest
+  	    runs-on: ubuntu-latest
     steps:
       - name: Checkout to repo
         uses: actions/checkout@v2
