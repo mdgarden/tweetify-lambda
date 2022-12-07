@@ -2,7 +2,7 @@ org: madang
 app: tweetify-lambda
 service: tweetify-lambda
 
-frameworkVersion: '3'
+frameworkVersion: "3"
 
 provider:
   name: aws
@@ -11,3 +11,6 @@ provider:
 functions:
   hello:
     handler: handler.hello
+
+plugins:
+  - serverless-plugin-typescript
